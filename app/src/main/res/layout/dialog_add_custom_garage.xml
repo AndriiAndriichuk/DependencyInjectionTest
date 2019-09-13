@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="7dp">
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_height="match_parent"
+        android:layout_width="300dp"
+        android:id="@+id/animationCarStyle"
+        app:lottie_fileName="car_blue.json"
+        app:lottie_loop="true"
+        app:lottie_autoPlay="true"
+        android:layout_weight="1"/>
+
+    <Switch
+        android:id="@+id/switchCarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Car Style"
+        />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_height="match_parent"
+        android:layout_width="300dp"
+        android:id="@+id/animationBikeStyle"
+        app:lottie_fileName="bike_violet.json"
+        app:lottie_loop="true"
+        app:lottie_autoPlay="true"
+        android:layout_weight="1"/>
+    <Switch
+        android:id="@+id/switchBikeStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bike Style"
+        />
+
+    <Button
+        android:textColor="@color/text1"
+        android:layout_gravity="center"
+        android:id="@+id/btnAddGarage"
+        android:background="@drawable/background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:layout_marginTop="5dp"
+        android:text="Add Garage" />
+</LinearLayout>
